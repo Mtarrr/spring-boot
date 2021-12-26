@@ -10,10 +10,10 @@
     <p>Name: <input type="text" th:field="*{name}" required/></p>
     <p>Surname: <input type="text" th:field="*{surname}" required/></p>
     <p>Patronymic: <input type="text" th:field="*{patronymic}"/></p>
-    <p>Age: <input type="text" th:field="*{age}" pattern="^(0|[1-9][0-9]{0,2})$"/></p>
-    <p>Salary: <input type="text" th:field="*{salary}"/></p>
+    <p>Age: <input type="text" th:field="*{age}" pattern="^(0|[1-9][0-9]{0,2})$" required/></p>
+    <p>Salary: <input type="text" th:field="*{salary}" required/></p>
     <p>Email: <input type="email" th:field="*{email}" required/></p>
-    <p>Workplace: <input type="text" th:field="*{workplace}"/></p>
+    <p>Workplace: <input type="text" th:field="*{workplace}" required/></p>
     <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
     <p><input type="button" onclick="window.location.href ='/searchUser'" value="Get information about user"/></p>
     <p><input type="button" onclick="window.location.href ='/upload'" value="Upload a file with information about user"/></p>
